@@ -1,0 +1,355 @@
+{
+  "scope": "Local source binding check; not a hosted Shimpilot scan",
+  "date": "2026-10-07",
+  "lookalikeProviderAttributions": 0,
+  "bindings": [
+    {
+      "provider": "aws",
+      "symbol": "DynamoDB.DocumentClient.constructor",
+      "file": "fixtures/aws-review-only.ts",
+      "line": 4
+    },
+    {
+      "provider": "aws",
+      "symbol": "Lambda.constructor",
+      "file": "fixtures/aws-review-only.ts",
+      "line": 8
+    },
+    {
+      "provider": "aws",
+      "symbol": "DynamoDB.DocumentClient.get",
+      "file": "fixtures/aws-review-only.ts",
+      "line": 5
+    },
+    {
+      "provider": "aws",
+      "symbol": "Lambda.invoke",
+      "file": "fixtures/aws-review-only.ts",
+      "line": 9
+    },
+    {
+      "provider": "stripe",
+      "symbol": "orders.create",
+      "file": "fixtures/legacy-orders.ts",
+      "line": 5
+    },
+    {
+      "provider": "supabase",
+      "symbol": "auth.user",
+      "file": "fixtures/legacy-realtime.ts",
+      "line": 5
+    },
+    {
+      "provider": "supabase",
+      "symbol": "auth.session",
+      "file": "fixtures/legacy-realtime.ts",
+      "line": 6
+    },
+    {
+      "provider": "supabase",
+      "symbol": "from.on.subscribe",
+      "file": "fixtures/legacy-realtime.ts",
+      "line": 7
+    },
+    {
+      "provider": "supabase",
+      "symbol": "from.on",
+      "file": "fixtures/legacy-realtime.ts",
+      "line": 7
+    },
+    {
+      "provider": "supabase",
+      "symbol": "from",
+      "file": "fixtures/legacy-realtime.ts",
+      "line": 7
+    },
+    {
+      "provider": "supabase",
+      "symbol": "removeSubscription",
+      "file": "fixtures/legacy-realtime.ts",
+      "line": 8
+    },
+    {
+      "provider": "supabase",
+      "symbol": "auth.update",
+      "file": "fixtures/legacy-realtime.ts",
+      "line": 12
+    },
+    {
+      "provider": "openai",
+      "symbol": "beta.assistants.create",
+      "file": "fixtures/assistants/workflow.ts",
+      "line": 5
+    },
+    {
+      "provider": "openai",
+      "symbol": "beta.threads.create",
+      "file": "fixtures/assistants/workflow.ts",
+      "line": 6
+    },
+    {
+      "provider": "openai",
+      "symbol": "beta.threads.messages.create",
+      "file": "fixtures/assistants/workflow.ts",
+      "line": 7
+    },
+    {
+      "provider": "openai",
+      "symbol": "beta.threads.runs.create",
+      "file": "fixtures/assistants/workflow.ts",
+      "line": 8
+    },
+    {
+      "provider": "aws",
+      "symbol": "v3.S3.constructor",
+      "file": "fixtures/modern-controls/clients.ts",
+      "line": 10
+    },
+    {
+      "provider": "aws",
+      "symbol": "v3.S3.ListObjectsV2",
+      "file": "fixtures/modern-controls/clients.ts",
+      "line": 15
+    },
+    {
+      "provider": "stripe",
+      "symbol": "subscriptions.cancel",
+      "file": "fixtures/modern-controls/clients.ts",
+      "line": 12
+    },
+    {
+      "provider": "openai",
+      "symbol": "chat.completions.create",
+      "file": "fixtures/modern-controls/clients.ts",
+      "line": 13
+    },
+    {
+      "provider": "supabase",
+      "symbol": "from.insert.select",
+      "file": "fixtures/modern-controls/clients.ts",
+      "line": 14
+    },
+    {
+      "provider": "supabase",
+      "symbol": "from",
+      "file": "fixtures/modern-controls/clients.ts",
+      "line": 14
+    },
+    {
+      "provider": "anthropic",
+      "symbol": "messages.create",
+      "file": "src/lib/providers/anthropic.ts",
+      "line": 7
+    },
+    {
+      "provider": "aws",
+      "symbol": "S3.constructor",
+      "file": "src/lib/providers/aws.ts",
+      "line": 8
+    },
+    {
+      "provider": "aws",
+      "symbol": "S3.putObject",
+      "file": "src/lib/providers/aws.ts",
+      "line": 9
+    },
+    {
+      "provider": "openai",
+      "symbol": "createChatCompletion",
+      "file": "src/lib/providers/openai.ts",
+      "line": 11
+    },
+    {
+      "provider": "openai",
+      "symbol": "createEmbedding",
+      "file": "src/lib/providers/openai.ts",
+      "line": 17
+    },
+    {
+      "provider": "openai",
+      "symbol": "createModeration",
+      "file": "src/lib/providers/openai.ts",
+      "line": 24
+    },
+    {
+      "provider": "stripe",
+      "symbol": "customers.create",
+      "file": "src/lib/providers/stripe.ts",
+      "line": 27
+    },
+    {
+      "provider": "stripe",
+      "symbol": "checkout.sessions.create",
+      "file": "src/lib/providers/stripe.ts",
+      "line": 29
+    },
+    {
+      "provider": "stripe",
+      "symbol": "billingPortal.sessions.create",
+      "file": "src/lib/providers/stripe.ts",
+      "line": 42
+    },
+    {
+      "provider": "stripe",
+      "symbol": "subscriptions.del",
+      "file": "src/lib/providers/stripe.ts",
+      "line": 50
+    },
+    {
+      "provider": "stripe",
+      "symbol": "webhooks.constructEvent",
+      "file": "src/lib/providers/stripe.ts",
+      "line": 56
+    },
+    {
+      "provider": "supabase",
+      "symbol": "createClient.options",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 7
+    },
+    {
+      "provider": "supabase",
+      "symbol": "createClient.options",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 14
+    },
+    {
+      "provider": "supabase",
+      "symbol": "auth.signIn",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 15
+    },
+    {
+      "provider": "supabase",
+      "symbol": "createClient.options",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 21
+    },
+    {
+      "provider": "supabase",
+      "symbol": "auth.signUp",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 22
+    },
+    {
+      "provider": "supabase",
+      "symbol": "createClient.options",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 27
+    },
+    {
+      "provider": "supabase",
+      "symbol": "from.select.eq.order",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 28
+    },
+    {
+      "provider": "supabase",
+      "symbol": "from.select.eq",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 28
+    },
+    {
+      "provider": "supabase",
+      "symbol": "from.select",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 28
+    },
+    {
+      "provider": "supabase",
+      "symbol": "from",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 28
+    },
+    {
+      "provider": "supabase",
+      "symbol": "createClient.options",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 36
+    },
+    {
+      "provider": "supabase",
+      "symbol": "from.insert",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 38
+    },
+    {
+      "provider": "supabase",
+      "symbol": "from",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 38
+    },
+    {
+      "provider": "supabase",
+      "symbol": "createClient.options",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 47
+    },
+    {
+      "provider": "supabase",
+      "symbol": "from.update",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 48
+    },
+    {
+      "provider": "supabase",
+      "symbol": "from",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 48
+    },
+    {
+      "provider": "supabase",
+      "symbol": "createClient.options",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 53
+    },
+    {
+      "provider": "supabase",
+      "symbol": "from.delete",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 54
+    },
+    {
+      "provider": "supabase",
+      "symbol": "from",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 54
+    },
+    {
+      "provider": "supabase",
+      "symbol": "createClient.options",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 58
+    },
+    {
+      "provider": "supabase",
+      "symbol": "storage.from.upload",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 59
+    },
+    {
+      "provider": "supabase",
+      "symbol": "storage.from",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 59
+    },
+    {
+      "provider": "supabase",
+      "symbol": "createClient.options",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 63
+    },
+    {
+      "provider": "supabase",
+      "symbol": "storage.from.download",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 64
+    },
+    {
+      "provider": "supabase",
+      "symbol": "storage.from",
+      "file": "src/lib/providers/supabase.ts",
+      "line": 64
+    }
+  ]
+}

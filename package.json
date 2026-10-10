@@ -1,0 +1,41 @@
+{
+  "name": "shimpilot-demo-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Runnable full-stack SaaS with deliberately historical provider SDKs for Shimpilot verification",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "node scripts/start.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test --test-concurrency=1 tests/*.test.ts",
+    "verify": "npm run typecheck && npm test && npm run build",
+    "test:smoke": "node scripts/smoke.mjs",
+    "db:reset": "node --import tsx scripts/reset.ts",
+    "demo:inventory": "node scripts/inventory.mjs"
+  },
+  "dependencies": {
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "stripe": "10.17.0",
+    "openai": "3.3.0",
+    "@supabase/supabase-js": "1.35.7",
+    "@anthropic-ai/sdk": "0.20.9",
+    "aws-sdk": "2.1692.0",
+    "lucide-react": "0.468.0",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "tsx": "4.21.0",
+    "tailwindcss": "4.1.18",
+    "@tailwindcss/postcss": "4.1.18"
+  }
+}

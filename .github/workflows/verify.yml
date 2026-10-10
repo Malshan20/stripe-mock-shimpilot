@@ -1,0 +1,32 @@
+name: Verify demo contracts
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      DEMO_MODE: 'true'
+      DATABASE_PATH: '.data/ci.sqlite'
+      APP_URL: 'http://localhost:3000'
+      NEXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+      - run: npm ci --no-audit --no-fund
+      - run: npm run verify
+      - name: HTTP smoke test
+        run: |
+          npm start > /tmp/demo-next.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID' EXIT
+          for attempt in $(seq 1 60); do
+            if curl --fail --silent http://localhost:3000/api/health > /dev/null; then break; fi
+            sleep 1
+          done
+          npm run test:smoke

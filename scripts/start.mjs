@@ -1,0 +1,11 @@
+import {cpSync,existsSync} from 'node:fs';
+import {spawn} from 'node:child_process';
+import {resolve} from 'node:path';
+if(existsSync('.env.local'))process.loadEnvFile('.env.local');
+const databasePath=resolve(process.env.DATABASE_PATH || '.data/demo.sqlite');
+if(!existsSync('.next/standalone/server.js'))throw new Error('Run npm run build first');
+cpSync('.next/static','.next/standalone/.next/static',{recursive:true});
+cpSync('public','.next/standalone/public',{recursive:true});
+const child=spawn(process.execPath,['.next/standalone/server.js'],{stdio:'inherit',env:{...process.env,DATABASE_PATH:databasePath,HOSTNAME:process.env.APP_HOST || '0.0.0.0',PORT:process.env.PORT || '3000'}});
+for(const signal of ['SIGTERM','SIGINT'])process.on(signal,()=>child.kill(signal));
+child.on('exit',code=>process.exit(code ?? 0));

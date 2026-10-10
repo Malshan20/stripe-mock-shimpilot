@@ -1,0 +1,1 @@
+{"name":"modern-scan-controls","private":true,"dependencies":{"stripe":"13.11.0","openai":"4.56.0","@supabase/supabase-js":"2.45.4","@aws-sdk/client-s3":"3.637.0"}}
